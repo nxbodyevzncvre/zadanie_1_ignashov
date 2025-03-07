@@ -1,3 +1,10 @@
+<?php
+
+require_once "functions.php";
+
+$cities = loadBanners('about-page.json');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,34 +50,7 @@ https://templatemo.com/tm-580-woox-travel
   </div>
   <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.php" class="logo">
-                        <img src="assets/images/logo.png" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="about.php" class="active">About</a></li>
-                        <li><a href="deals.php">Deals</a></li>
-                        <li><a href="reservation.php">Reservation</a></li>
-                        <li><a href="reservation.php">Book Yours</a></li>
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
+  <?php include_once "components/header.php"?>
   <!-- ***** Header Area End ***** -->
 
   <!-- ***** Main Banner Area Start ***** -->
@@ -102,62 +82,15 @@ https://templatemo.com/tm-580-woox-travel
             <div class="col-lg-12">
               <h2>Caribbean’s <em>Cities &amp; Towns</em></h2>
             </div>
+            
             <div class="col-lg-12">
               <div class="owl-cites-town owl-carousel">
-                <div class="item">
-                  <div class="thumb">
-                    <img src="assets/images/cities-01.jpg" alt="">
-                    <h4>Havana</h4>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb">
-                    <img src="assets/images/cities-02.jpg" alt="">
-                    <h4>Kingston</h4>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb">
-                    <img src="assets/images/cities-03.jpg" alt="">
-                    <h4>George Town</h4>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb">
-                    <img src="assets/images/cities-04.jpg" alt="">
-                    <h4>Santo Domingo</h4>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb">
-                    <img src="assets/images/cities-01.jpg" alt="">
-                    <h4>Havana</h4>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb">
-                    <img src="assets/images/cities-02.jpg" alt="">
-                    <h4>Kingston</h4>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb">
-                    <img src="assets/images/cities-03.jpg" alt="">
-                    <h4>George Town</h4>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb">
-                    <img src="assets/images/cities-04.jpg" alt="">
-                    <h4>Santo Domingo</h4>
-                  </div>
-                </div>
+                <?php displayCityImages($cities); ?>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+     </div>
   </div>
 
   <div class="weekly-offers">
@@ -175,124 +108,12 @@ https://templatemo.com/tm-580-woox-travel
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-weekly-offers owl-carousel">
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/offers-01.jpg" alt="">
-                <div class="text">
-                  <h4>Havana<br><span><i class="fa fa-users"></i> 234 Check Ins</span></h4>
-                  <h6>$420<br><span>/person</span></h6>
-                  <div class="line-dec"></div>
-                  <ul>
-                    <li>Deal Includes:</li>
-                    <li><i class="fa fa-taxi"></i> 5 Days Trip > Hotel Included</li>
-                    <li><i class="fa fa-plane"></i> Airplane Bill Included</li>
-                    <li><i class="fa fa-building"></i> Daily Places Visit</li>
-                  </ul>
-                  <div class="main-button">
-                    <a href="reservation.php">Make a Reservation</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/offers-02.jpg" alt="">
-                <div class="text">
-                  <h4>Kingston<br><span><i class="fa fa-users"></i> 234 Check Ins</span></h4>
-                  <h6>$420<br><span>/person</span></h6>
-                  <div class="line-dec"></div>
-                  <ul>
-                    <li>Deal Includes:</li>
-                    <li><i class="fa fa-taxi"></i> 5 Days Trip > Hotel Included</li>
-                    <li><i class="fa fa-plane"></i> Airplane Bill Included</li>
-                    <li><i class="fa fa-building"></i> Daily Places Visit</li>
-                  </ul>
-                  <div class="main-button">
-                    <a href="reservation.php">Make a Reservation</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/offers-03.jpg" alt="">
-                <div class="text">
-                  <h4>George Town<br><span><i class="fa fa-users"></i> 234 Check Ins</span></h4>
-                  <h6>$420<br><span>/person</span></h6>
-                  <div class="line-dec"></div>
-                  <ul>
-                    <li>Deal Includes:</li>
-                    <li><i class="fa fa-taxi"></i> 5 Days Trip > Hotel Included</li>
-                    <li><i class="fa fa-plane"></i> Airplane Bill Included</li>
-                    <li><i class="fa fa-building"></i> Daily Places Visit</li>
-                  </ul>
-                  <div class="main-button">
-                    <a href="reservation.php">Make a Reservation</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/offers-01.jpg" alt="">
-                <div class="text">
-                  <h4>Havana<br><span><i class="fa fa-users"></i> 234 Check Ins</span></h4>
-                  <h6>$420<br><span>/person</span></h6>
-                  <div class="line-dec"></div>
-                  <ul>
-                    <li>Deal Includes:</li>
-                    <li><i class="fa fa-taxi"></i> 5 Days Trip > Hotel Included</li>
-                    <li><i class="fa fa-plane"></i> Airplane Bill Included</li>
-                    <li><i class="fa fa-building"></i> Daily Places Visit</li>
-                  </ul>
-                  <div class="main-button">
-                    <a href="reservation.php">Make a Reservation</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/offers-02.jpg" alt="">
-                <div class="text">
-                  <h4>Kingston<br><span><i class="fa fa-users"></i> 234 Check Ins</span></h4>
-                  <h6>$420<br><span>/person</span></h6>
-                  <div class="line-dec"></div>
-                  <ul>
-                    <li>Deal Includes:</li>
-                    <li><i class="fa fa-taxi"></i> 5 Days Trip > Hotel Included</li>
-                    <li><i class="fa fa-plane"></i> Airplane Bill Included</li>
-                    <li><i class="fa fa-building"></i> Daily Places Visit</li>
-                  </ul>
-                  <div class="main-button">
-                    <a href="reservation.php">Make a Reservation</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/offers-03.jpg" alt="">
-                <div class="text">
-                  <h4>George Town<br><span><i class="fa fa-users"></i> 234 Check Ins</span></h4>
-                  <h6>$420<br><span>/person</span></h6>
-                  <div class="line-dec"></div>
-                  <ul>
-                    <li>Deal Includes:</li>
-                    <li><i class="fa fa-taxi"></i> 5 Days Trip > Hotel Included</li>
-                    <li><i class="fa fa-plane"></i> Airplane Bill Included</li>
-                    <li><i class="fa fa-building"></i> Daily Places Visit</li>
-                  </ul>
-                  <div class="main-button">
-                    <a href="reservation.php">Make a Reservation</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <?php displayCities($cities); ?>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <div class="more-about">
@@ -443,16 +264,7 @@ https://templatemo.com/tm-580-woox-travel
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">WoOx Travel</a> Company. All rights reserved. 
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php require_once "components/footer.php"?>
 
 
   <!-- Scripts -->

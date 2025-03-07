@@ -1,0 +1,52 @@
+{
+    "cities": [
+      {
+        "name": "Havana",
+        "check_ins": 234,
+        "price_per_person": "$420",
+        "image": "assets/images/cities-01.jpg",
+        "offer": "assets/images/offers-01.jpg",
+        "deal_includes": [
+          "5 Days Trip > Hotel Included",
+          "Airplane Bill Included",
+          "Daily Places Visit"
+        ]
+      },
+      {
+        "name": "Kingston",
+        "check_ins": 234,
+        "price_per_person": "$420",
+        "image": "assets/images/cities-02.jpg",
+        "offer": "assets/images/offers-02.jpg",
+        "deal_includes": [
+          "5 Days Trip > Hotel Included",
+          "Airplane Bill Included",
+          "Daily Places Visit"
+        ]
+      },
+      {
+        "name": "George Town",
+        "check_ins": 234,
+        "price_per_person": "$420",
+        "image": "assets/images/cities-03.jpg",
+        "offer": "assets/images/offers-03.jpg",
+        "deal_includes": [
+          "5 Days Trip > Hotel Included",
+          "Airplane Bill Included",
+          "Daily Places Visit"
+        ]
+      },
+      {
+        "name": "Santo Domingo",
+        "check_ins": 234,
+        "price_per_person": "$420",
+        "image": "assets/images/cities-03.jpg",
+        "offer":" assets/images/offers-03.jpg",
+        "deal_includes": [
+          "5 Days Trip > Hotel Included",
+          "Airplane Bill Included",
+          "Daily Places Visit"
+        ]
+      }
+    ]
+  }

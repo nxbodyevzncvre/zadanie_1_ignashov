@@ -1,3 +1,11 @@
+
+<?php
+
+require_once "functions.php";
+
+$countries = json_decode(file_get_contents('countries.json'), true)['countries'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,33 +53,7 @@ https://templatemo.com/tm-580-woox-travel
   <!-- ***** Preloader End ***** -->
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.php" class="logo">
-                        <img src="assets/images/logo.png" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="index.php" class="active">Home</a></li>
-                        <li><a href="about.php">About</a></li>
-                        <li><a href="deals.php">Deals</a></li>
-                        <li><a href="reservation.php">Reservation</a></li>
-                        <li><a href="reservation.php">Book Yours</a></li>
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
+  <?php require_once "components/header.php"?>
   <!-- ***** Header Area End ***** -->
 
   <!-- ***** Main Banner Area Start ***** -->
@@ -166,6 +148,7 @@ https://templatemo.com/tm-580-woox-travel
                 <div class="col-lg-12">
                   <div class="more-info">
                     <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6"></div>
                       <div class="col-lg-3 col-sm-6 col-6">
                         <i class="fa fa-user"></i>
                         <h4><span>Population:</span><br>67.41 M</h4>
@@ -253,93 +236,7 @@ https://templatemo.com/tm-580-woox-travel
         <div class="col-lg-8">
           <div class="items">
             <div class="row">
-              <div class="col-lg-12">
-                <div class="item">
-                  <div class="row">
-                    <div class="col-lg-4 col-sm-5">
-                      <div class="image">
-                        <img src="assets/images/country-01.jpg" alt="">
-                      </div>
-                    </div>
-                    <div class="col-lg-8 col-sm-7">
-                      <div class="right-content">
-                        <h4>SWITZERLAND</h4>
-                        <span>Europe</span>
-                        <div class="main-button">
-                          <a href="about.php">Explore More</a>
-                        </div>
-                        <p>Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your website. You can use this layout for your commercial work.</p>
-                        <ul class="info">
-                          <li><i class="fa fa-user"></i> 8.66 Mil People</li>
-                          <li><i class="fa fa-globe"></i> 41.290 km2</li>
-                          <li><i class="fa fa-home"></i> $1.100.200</li>
-                        </ul>
-                        <div class="text-button">
-                          <a href="about.php">Need Directions ? <i class="fa fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="item">
-                  <div class="row">
-                    <div class="col-lg-4 col-sm-5">
-                      <div class="image">
-                        <img src="assets/images/country-02.jpg" alt="">
-                      </div>
-                    </div>
-                    <div class="col-lg-8 col-sm-7">
-                      <div class="right-content">
-                        <h4>CARIBBEAN</h4>
-                        <span>North America</span>
-                        <div class="main-button">
-                          <a href="about.php">Explore More</a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        <ul class="info">
-                          <li><i class="fa fa-user"></i> 44.48 Mil People</li>
-                          <li><i class="fa fa-globe"></i> 275.400 km2</li>
-                          <li><i class="fa fa-home"></i> $946.000</li>
-                        </ul>
-                        <div class="text-button">
-                          <a href="about.php">Need Directions ? <i class="fa fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="item last-item">
-                  <div class="row">
-                    <div class="col-lg-4 col-sm-5">
-                      <div class="image">
-                        <img src="assets/images/country-03.jpg" alt="">
-                      </div>
-                    </div>
-                    <div class="col-lg-8 col-sm-7">
-                      <div class="right-content">
-                        <h4>FRANCE</h4>
-                        <span>Europe</span>
-                        <div class="main-button">
-                          <a href="about.php">Explore More</a>
-                        </div>
-                        <p>We hope this WoOx template is useful for you, please support us a <a href="https://paypal.me/templatemo" target="_blank">small amount of PayPal</a> to info [at] templatemo.com for our survival. We really appreciate your contribution.</p>
-                        <ul class="info">
-                          <li><i class="fa fa-user"></i> 67.41 Mil People</li>
-                          <li><i class="fa fa-globe"></i> 551.500 km2</li>
-                          <li><i class="fa fa-home"></i> $425.600</li>
-                        </ul>
-                        <div class="text-button">
-                          <a href="about.php">Need Directions ? <i class="fa fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <?php displayCountries($countries); ?>
               <div class="col-lg-12">
                 <ul class="page-numbers">
                   <li><a href="#"><i class="fa fa-arrow-left"></i></a></li>
@@ -383,16 +280,7 @@ https://templatemo.com/tm-580-woox-travel
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">WoOx Travel</a> Company. All rights reserved. 
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php require_once "components/footer.php" ?>
 
 
   <!-- Scripts -->

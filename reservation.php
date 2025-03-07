@@ -44,33 +44,7 @@ https://templatemo.com/tm-580-woox-travel
   <!-- ***** Preloader End ***** -->
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="deals.html">Deals</a></li>
-                        <li><a href="reservation.html" class="active">Reservation</a></li>
-                        <li><a href="reservation.html">Book Yours</a></li>
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
+  <?php require_once "components/header.php"?>
   <!-- ***** Header Area End ***** -->
 
   <div class="second-page-heading">
@@ -80,7 +54,7 @@ https://templatemo.com/tm-580-woox-travel
           <h4>Book Prefered Deal Here</h4>
           <h2>Make Your Reservation</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt uttersi labore et dolore magna aliqua is ipsum suspendisse ultrices gravida</p>
-          <div class="main-button"><a href="about.html">Discover More</a></div>
+          <div class="main-button"><a href="about.php">Discover More</a></div>
         </div>
       </div>
     </div>
@@ -182,16 +156,7 @@ https://templatemo.com/tm-580-woox-travel
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">WoOx Travel</a> Company. All rights reserved. 
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php require_once "components/footer.php"?>
 
 
   <!-- Scripts -->

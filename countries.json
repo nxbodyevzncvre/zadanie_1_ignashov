@@ -5,28 +5,24 @@
       "region": "North America",
       "population": "44.48 M",
       "territory": "275.400 KM2",
-      "avg_price": "$946.000"
+      "avg_price": "$946.000",
+      "image": "assets/images/country-01.jpg"
     },
     {
       "name": "Switzerland",
       "region": "Europe",
       "population": "8.66 M",
       "territory": "41.290 KM2",
-      "avg_price": "$1.100.200"
+      "avg_price": "$1.100.200",
+      "image": "assets/images/country-02.jpg"
     },
     {
       "name": "France",
       "region": "Europe",
       "population": "67.41 M",
       "territory": "551.500 KM2",
-      "avg_price": "$425.600"
-    },
-    {
-      "name": "Thailand",
-      "region": "Asia",
-      "population": "69.86 M",
-      "territory": "513.120 KM2",
-      "avg_price": "$165.450"
+      "avg_price": "$425.600",
+      "image": "assets/images/country-03.jpg"
     }
   ]
 }

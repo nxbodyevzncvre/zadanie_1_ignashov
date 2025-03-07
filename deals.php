@@ -44,33 +44,7 @@ https://templatemo.com/tm-580-woox-travel
   <!-- ***** Preloader End ***** -->
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="deals.html" class="active">Deals</a></li>
-                        <li><a href="reservation.html">Reservation</a></li>
-                        <li><a href="reservation.html">Book Yours</a></li>
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
+  <?php require_once "components/header.php"?>
   <!-- ***** Header Area End ***** -->
 
   <div class="page-heading">
@@ -79,7 +53,7 @@ https://templatemo.com/tm-580-woox-travel
         <div class="col-lg-12">
           <h4>Discover Our Weekly Offers</h4>
           <h2>Amazing Prices &amp; More</h2>
-          <div class="border-button"><a href="about.html">Discover More</a></div>
+          <div class="border-button"><a href="about.php">Discover More</a></div>
         </div>
       </div>
     </div>
@@ -167,7 +141,7 @@ https://templatemo.com/tm-580-woox-travel
                   </div>
                   <p>Lorem ipsum dolor sit amet dire consectetur adipiscing elit.</p>
                   <div class="main-button">
-                    <a href="reservation.html">Make a Reservation</a>
+                    <a href="reservation.php">Make a Reservation</a>
                   </div>
                 </div>
               </div>
@@ -198,7 +172,7 @@ https://templatemo.com/tm-580-woox-travel
                   </div>
                   <p>Lorem ipsum dolor sit amet dire consectetur adipiscing elit.</p>
                   <div class="main-button">
-                    <a href="reservation.html">Make a Reservation</a>
+                    <a href="reservation.php">Make a Reservation</a>
                   </div>
                 </div>
               </div>
@@ -229,7 +203,7 @@ https://templatemo.com/tm-580-woox-travel
                   </div>
                   <p>Lorem ipsum dolor sit amet dire consectetur adipiscing elit.</p>
                   <div class="main-button">
-                    <a href="reservation.html">Make a Reservation</a>
+                    <a href="reservation.php">Make a Reservation</a>
                   </div>
                 </div>
               </div>
@@ -260,7 +234,7 @@ https://templatemo.com/tm-580-woox-travel
                   </div>
                   <p>This free CSS template is provided by Template Mo website.</p>
                   <div class="main-button">
-                    <a href="reservation.html">Make a Reservation</a>
+                    <a href="reservation.php">Make a Reservation</a>
                   </div>
                 </div>
               </div>
@@ -289,23 +263,14 @@ https://templatemo.com/tm-580-woox-travel
         </div>
         <div class="col-lg-4">
           <div class="border-button">
-            <a href="reservation.html">Book Yours Now</a>
+            <a href="reservation.php">Book Yours Now</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">WoOx Travel</a> Company. All rights reserved. 
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php require_once "components/footer.php"?>
 
 
   <!-- Scripts -->
