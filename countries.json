@@ -1,0 +1,32 @@
+{
+  "countries": [
+    {
+      "name": "Caribbean",
+      "region": "North America",
+      "population": "44.48 M",
+      "territory": "275.400 KM2",
+      "avg_price": "$946.000"
+    },
+    {
+      "name": "Switzerland",
+      "region": "Europe",
+      "population": "8.66 M",
+      "territory": "41.290 KM2",
+      "avg_price": "$1.100.200"
+    },
+    {
+      "name": "France",
+      "region": "Europe",
+      "population": "67.41 M",
+      "territory": "551.500 KM2",
+      "avg_price": "$425.600"
+    },
+    {
+      "name": "Thailand",
+      "region": "Asia",
+      "population": "69.86 M",
+      "territory": "513.120 KM2",
+      "avg_price": "$165.450"
+    }
+  ]
+}
